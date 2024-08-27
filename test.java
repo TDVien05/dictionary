@@ -36,7 +36,11 @@ public class test {
                 System.out.print("Enter key : ");
                 String key = scanner.nextLine();
                 System.out.println(data.timTu(key));
-            } 
+            } else if(choice == 5) {
+                System.out.println(data.showList());
+            } else if(choice == 6) {
+                
+            }
         } while (true);
     }
 }

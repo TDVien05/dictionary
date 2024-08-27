@@ -27,4 +27,8 @@ public class TuDien {
     public String timTu(String tuKhoa) {
         return this.td.get(tuKhoa);
     }
+    
+    public int showList() {
+        return this.td.size();
+    }
 }
