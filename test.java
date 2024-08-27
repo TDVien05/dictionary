@@ -8,6 +8,9 @@ public class test {
         System.out.println("1 : Add word");
         System.out.println("2 : Remove word");
         System.out.println("3 : Show dictionary");
+        System.out.println("4 : Search word");
+        System.out.println("5 : Show list of dictionary");
+        System.out.println("6 : Delete dictionary");
     }
     public static void main(String[] args) {
         do {            
@@ -29,7 +32,11 @@ public class test {
                 data.xoaTu(key);
             } else if(choice == 3) {
                 data.hienThiDanhSach();
-            }
+            } else if(choice == 4) {
+                System.out.print("Enter key : ");
+                String key = scanner.nextLine();
+                System.out.println(data.timTu(key));
+            } 
         } while (true);
     }
 }

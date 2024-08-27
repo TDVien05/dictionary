@@ -23,4 +23,8 @@ public class TuDien {
             System.out.println(key);
         }
     }
+    
+    public String timTu(String tuKhoa) {
+        return this.td.get(tuKhoa);
+    }
 }
